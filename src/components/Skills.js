@@ -7,6 +7,7 @@ import {
   Container,
   Image,
 } from '@chakra-ui/react';
+import { useMediaQuery } from '@chakra-ui/react'
 import SlideFadeOnScroll from "./SlideFadeOnScroll"
 import solidity from '../img/solidity.png'
 import metamask2 from '../img/metamask2.jpeg'
@@ -21,11 +22,12 @@ import react from '../img/react.png'
 
 
 const Skills = () => {
+  const [isLessThan375] = useMediaQuery('(max-width: 375px)')
 
   return (
     <Box id="Skills" scrollBehavior={'smooth'} bgGradient='linear(to right,rgb(218, 226, 248),rgb(214, 164, 164))'>
       <Center>
-        <Heading mt={10} p={3} fontSize={'6xl'} fontFamily={'Rock Salt'} >Skills</Heading>
+        <Heading mt={10} p={3} fontSize={isLessThan375 ? '4xl' : '6xl'} fontFamily={'Rock Salt'} >Skills</Heading>
       </Center>
       <Container m={0} maxWidth={"none"}>
             <Grid templateColumns='repeat(5, 1fr)' templateRows={'repeat(5, 1fr)'} ml={[0, 50, 150, 400]} mr={50}>
@@ -37,7 +39,7 @@ const Skills = () => {
                 <GridItem colSpan={1} colStart={1} rowSpan={1} rowStart={2}  >
                   <a href="https://metamask.io/" textDecoration="none" _hover={{ textDecoration: 'none' }}>
                     <SlideFadeOnScroll>
-                      <Image mt={10} borderRadius='full' src={metamask2} alt="metamask2" objectFit="contain" boxShadow='dark-lg'/>
+                      <Image mt={isLessThan375 ? 5 : 10} borderRadius='full' src={metamask2} alt="metamask2" objectFit="contain" boxShadow='dark-lg'/>
                     </SlideFadeOnScroll>
                   </a>
                 </GridItem>
@@ -67,7 +69,7 @@ const Skills = () => {
             <Grid templateColumns='repeat(4, 1fr)' templateRows={'repeat(5, 1fr)'} ml={50} mr={[0, 50, 150, 200, 400]}>
               <GridItem m={3} colSpan={3} colStart={2} rowSpan={2} rowStart={2} >
                 <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript" textDecoration="none" _hover={{ textDecoration: 'none' }}>
-                  <Image mt={-10} src={javascript} alt="javascript" objectFit="contain" />
+                  <Image mt={isLessThan375 ? '' :-10} src={javascript} alt="javascript" objectFit="contain" />
                 </a>
               </GridItem>
               <GridItem colSpan={1} colStart={2} rowSpan={1} rowStart={1} >

@@ -8,13 +8,17 @@ import {
   Center,
   Spacer,
 } from '@chakra-ui/react';
+import { useMediaQuery } from '@chakra-ui/react'
 import BlogTags from './BlogTags';
 import alyra from '../../img/alyra.png'
 import diplome from '../../img/diplome.png'
 
 const Alyra = () => {
-    return (
-        <Box my={10} mx={5} p={5} backdropFilter="blur(4px)" borderWidth='1px'  minWidth={500} textAlign={'center'}>
+    const [isLessThan375] = useMediaQuery('(max-width: 375px)')
+
+    return (<>
+    
+        <Box my={10} mx={5} p={5} backdropFilter="blur(4px)" borderWidth='1px'  minWidth={isLessThan375 ? 300 : 500} textAlign={'center'}>
             <Center>
                 <a href="https://alyra.fr/" textDecoration="none" _hover={{ textDecoration: 'none' }}>
                 <Image
@@ -49,6 +53,7 @@ const Alyra = () => {
                 </Center>
             </Box>                
         </Box>
+    </>
     )
 }
 

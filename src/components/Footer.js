@@ -28,7 +28,7 @@ import {
     return (
         <Container id="Contact" bgGradient="radial( gray.500, gray.800)" maxW="full" mt={0} centerContent overflow="hidden">
             <Center>
-                <Heading my={10} p={3} color={'whiteAlpha.800'} fontSize={'6xl'} fontFamily={'Rock Salt'}>Contact</Heading>
+                <Heading my={10} p={3} color={'whiteAlpha.800'} fontSize={['4xl', null, null, null, '6xl']} fontFamily={'Rock Salt'}>Contact</Heading>
             </Center>
             <Box w={['80%','70','60%','40%']} bg="white" borderRadius="lg">
                 <Box m={8} color="#0B0E3F">

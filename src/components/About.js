@@ -8,14 +8,16 @@ import {
     Wrap,
     WrapItem,
 } from '@chakra-ui/react';
+import { useMediaQuery } from '@chakra-ui/react'
 
 const About = () => {
+    const [isLessThan375] = useMediaQuery('(max-width: 375px)')
     return (
     <Container as="section" id="About" maxW={'full'}  mt={10}>
       <Wrap justify='center' textAlign={'center'} spacing={20} my={10} p={5}>
         <WrapItem>
-            <Box w="600px">
-                <Heading pb={3} fontSize={'3xl'} fontFamily={'Rock Salt'}>About me</Heading>
+            <Box w={ isLessThan375 ? '375px' : "600px"} p='2'>
+                <Heading pb={5} fontSize={'3xl'} fontFamily={'Rock Salt'}>About me</Heading>
                 <Text color={'gray.600'} fontSize={'md'}>
                     Previously independant in the construction as a flooring-installer, i decided to dedicate my life in compute science to
                     pursue a true passion since my youngest age and developing my skills in a constantly evolving industry.
