@@ -59,7 +59,7 @@ const MyProjects = () => {
   return ( <>
   
   { isLessThan375 ? 
-    <Container p={5} mx={5} backdropFilter="blur(4px)" boxShadow='xl' borderWidth='1px' textAlign={'center'} width={[340, 340, 800, 1000, null]} minWidth={340} >
+    <Container id="Projects" p={5} mx={5} backdropFilter="blur(4px)" boxShadow='xl' borderWidth='1px' textAlign={'center'} width={[340, 340, 800, 1000, null]} minWidth={340} >
               
       <Center>
         <Heading mt={'-6rem'} lineHeight={1.3} borderTopRadius={'20px'} borderTop={'1px solid black'} boxShadow={'inner'} fontSize={'3xl'} fontFamily={'Rock Salt'}>My projects</Heading>
