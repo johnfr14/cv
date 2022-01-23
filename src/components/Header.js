@@ -9,7 +9,7 @@ const Header = () => {
   const [isLessThan375] = useMediaQuery('(max-width: 375px)')
   
     return (
-      <Box as="section" maxW="100%" minWidth={isLessThan375 ? 375 : 600} m={0} p={0} style={{backgroundImage: `url(${isLessThan375 ? bgHeaderPhone : bgHeader})`, height: `${isLessThan375 ?"52vh" : '100vh'}`, backgroundSize: `${isLessThan375 ? '' : "cover"}`, backgroundRepeat: 'no-repeat', backgroundAttachment: "fixed"}}>
+      <Box as="section" maxW="100%" minWidth={isLessThan375 ? 375 : 600} m={0} p={0} style={{backgroundImage: `url(${isLessThan375 ? bgHeaderPhone : bgHeader})`, height: `${isLessThan375 ?"60vh" : '100vh'}`, backgroundSize: `${isLessThan375 ? '' : "cover"}`, backgroundRepeat: 'no-repeat', backgroundAttachment: "fixed"}}>
         <Container m={0} maxW="100%" centerContent color="whiteAlpha.800">
           
           { isLessThan375 ? 
