@@ -5,6 +5,7 @@ import {
   GridItem,
   Heading,
   Center,
+  Container,
 } from '@chakra-ui/react';
 import { useMediaQuery } from '@chakra-ui/react'
 import bgHeader from '../../img/education.jpg'
@@ -17,7 +18,7 @@ const Education = () => {
   return (<>
     {isLessThan375 ? 
 
-      <Box as="section" id="Education" minWidth={375} m={0} p={0} style={{backgroundImage: `url(${bgHeader})`, backgroundSize: "cover", backgroundRepeat: 'no-repeat', backgroundAttachment: "fixed"}} height={['280vh', '170vh', '170vh', "140h", "130vh"]}>
+      <Container as="section" id="Education" minWidth={375} m={0} p={0} style={{backgroundImage: `url(${bgHeader})`, backgroundSize: "cover", backgroundRepeat: 'no-repeat', backgroundAttachment: "fixed"}} >
         <Center>
           <Heading p={3} mt={5} color={"white"} fontSize={'4xl'} fontFamily={'Rock Salt'}>Education</Heading>
         </Center>
@@ -29,7 +30,7 @@ const Education = () => {
               <Extra />
             </GridItem>
           </SimpleGrid>
-      </Box>
+      </Container>
     
     :
       
