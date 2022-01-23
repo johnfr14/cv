@@ -14,7 +14,7 @@ const Header = () => {
           
           { isLessThan375 ? 
           
-          <Box w='60%'>
+          <Box w='60%' mt='2.5rem'>
               <SlideFadeOnScroll offsetY={"120px"}>
                 <VStack spacing={3}>
                   <Img borderRadius="full" src={john} alt="it's me" />

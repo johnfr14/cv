@@ -15,6 +15,7 @@ import {
   Stack,
   Text,
 } from '@chakra-ui/react';
+import { useMediaQuery } from '@chakra-ui/react'
 import {Link} from 'react-scroll'
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 import { useWeb3React } from "@web3-react/core"
@@ -44,6 +45,7 @@ const NavLink = ({ children }) => (
 const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const { active, account, activate, deactivate } = useWeb3React()
+  const [isLessThan375] = useMediaQuery('(max-width: 375px)')
 
   async function connect() {
     try {
@@ -62,7 +64,7 @@ const Navbar = () => {
   }
 
   return (
-    <Box style={{position: "sticky", top: "0px", backdropFilter: "blur(8px)"}} zIndex={200} mt="-20" bg="blackAlpha.600" color="white" w="100%" px={4} fontFamily={'Rock Salt'}>
+    <Box style={{position: "sticky", top: "0px", backdropFilter: "blur(8px)"}} zIndex={200} mt={isLessThan375 ? '' : "-20"} bg="blackAlpha.600" color="white" w="100%" px={4} fontFamily={'Rock Salt'}>
         <Flex  h={16} alignItems={'center'} justifyContent={'space-between'}>
           <IconButton
             size={'md'}

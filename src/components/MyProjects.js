@@ -62,7 +62,7 @@ const MyProjects = () => {
     <Container p={5} mx={5} backdropFilter="blur(4px)" boxShadow='xl' borderWidth='1px' textAlign={'center'} width={[340, 340, 800, 1000, null]} minWidth={340} >
               
       <Center>
-        <Heading mt={'-6rem'} lineHeight={1.3} borderTopRadius={'20px'} borderTop={'1px solid black'} boxShadow={'inner'} fontSize={'4xl'} fontFamily={'Rock Salt'}>My projects</Heading>
+        <Heading mt={'-6rem'} lineHeight={1.3} borderTopRadius={'20px'} borderTop={'1px solid black'} boxShadow={'inner'} fontSize={'3xl'} fontFamily={'Rock Salt'}>My projects</Heading>
       </Center>
       <Wrap justify='center' color={'whiteAlpha.800'}>
           {cards.map((card, index) => (
