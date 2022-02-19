@@ -163,7 +163,7 @@ const Skills = () => {
             <Grid templateColumns='repeat(4, 1fr)' templateRows={'repeat(5, 1fr)'} ml={50} mr={[0, 50, 150, 200, 400]}>
 
               <GridItem m={3} colSpan={3} colStart={2} rowSpan={2} rowStart={2} >
-                <Popover placement='bottom' trigger="hover" closeDelay={500}>
+                <Popover placement='right' trigger="hover" closeDelay={500}>
                   <PopoverTrigger>
                     <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript" textDecoration="none" _hover={{ textDecoration: 'none' }}>
                       <Image mt={isLessThan375 ? '' :-10} src={javascript} alt="javascript" objectFit="contain" />
@@ -180,7 +180,7 @@ const Skills = () => {
 
               <GridItem colSpan={1} colStart={2} rowSpan={1} rowStart={1} >
                
-                <Popover placement='bottom' trigger="hover" closeDelay={500}>
+                <Popover placement='top' trigger="hover" closeDelay={500} >
                   <PopoverTrigger>
                     <a href="https://chakra-ui.com/" textDecoration="none" _hover={{ textDecoration: 'none' }}>
                       <SlideFadeOnScroll offsetX='-120px' offsetY='0px'>
@@ -198,7 +198,7 @@ const Skills = () => {
               </GridItem>
 
               <GridItem colSpan={1} colStart={1} rowSpan={1} rowStart={2}  >
-                <Popover placement='bottom' trigger="hover" closeDelay={500}>
+                <Popover placement='right' trigger="hover" closeDelay={500}>
                   <PopoverTrigger>
                     <a href="https://www.prisma.io/" textDecoration="none" _hover={{ textDecoration: 'none' }}>
                       <SlideFadeOnScroll offsetX='-120px' offsetY='0px'>
@@ -216,7 +216,7 @@ const Skills = () => {
               </GridItem>
 
               <GridItem colSpan={1} colStart={1} rowSpan={1} rowStart={3} >
-                <Popover placement='bottom' trigger="hover" closeDelay={500}>
+                <Popover placement='right' trigger="hover" closeDelay={500}>
                   <PopoverTrigger>
                     <a href="https://reactjs.org/" textDecoration="none" _hover={{ textDecoration: 'none' }}>
                       <SlideFadeOnScroll offsetX='-120px' offsetY='0px'>
