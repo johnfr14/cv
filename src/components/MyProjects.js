@@ -39,7 +39,7 @@ const MyProjects = () => {
       text:
         "The project board is an exclusive resource for artists to create and sell their arts as NFT, but also allows everyone to buy and sell NFTs The marketplace is fully decentralized and each address can have his own dashboard.\nThis project has been made for the Alyra's certification collaborating with 3 other students.",
       image: SRO,
-      website: "https://prez-poc-marketplace.netlify.app/",
+      website: "https://sro-training-markeplace.netlify.app/",
     },
     {
       title: 'Alyra gradient',
