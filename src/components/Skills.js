@@ -234,7 +234,7 @@ const Skills = () => {
               </GridItem>
 
                 <GridItem colSpan={1} colStart={2} rowSpan={1} rowStart={4} >
-                  <Popover placement='bottom' trigger="hover" closeDelay={500}>
+                  <Popover placement='right' trigger="hover" closeDelay={500}>
                   <PopoverTrigger>
                     <a href="https://nodejs.org/en/" textDecoration="none" _hover={{ textDecoration: 'none' }}>
                       <SlideFadeOnScroll offsetX='-120px' offsetY='0px'>
