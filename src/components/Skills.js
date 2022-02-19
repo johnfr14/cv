@@ -10,6 +10,7 @@ import {
 import { useMediaQuery } from '@chakra-ui/react'
 import SlideFadeOnScroll from "./SlideFadeOnScroll"
 import solidity from '../img/solidity.png'
+import theGraph from "../img/theGraph.png"
 import metamask2 from '../img/metamask2.jpeg'
 import hardhat from '../img/hardhat.png'
 import ethers from '../img/ethers-js.png'
@@ -30,34 +31,41 @@ const Skills = () => {
         <Heading mt={10} p={3} fontSize={isLessThan375 ? '4xl' : '6xl'} fontFamily={'Rock Salt'} >Skills</Heading>
       </Center>
       <Container m={0} maxWidth={"none"}>
-            <Grid templateColumns='repeat(5, 1fr)' templateRows={'repeat(5, 1fr)'} ml={[0, 50, 150, 400]} mr={50}>
-                <GridItem m={3} colSpan={3} colStart={2} rowSpan={2} rowStart={2} >
+            <Grid templateColumns='repeat(5, 1fr)' templateRows={'repeat(6, 1fr)'} ml={[0, 50, 150, 400]} mr={50}>
+                <GridItem m={3} colSpan={3} colStart={2} rowSpan={2} rowStart={3} >
                   <a href="https://docs.soliditylang.org/en/v0.8.11/#" textDecoration="none" _hover={{ textDecoration: 'none' }}>
                     <Image src={solidity} borderRadius='full' alt="solidity" objectFit="contain" />
                   </a>
                 </GridItem>
-                <GridItem colSpan={1} colStart={1} rowSpan={1} rowStart={2}  >
+                <GridItem colSpan={1} colStart={2} rowSpan={1} rowStart={2} >
+                  <a href="https://metamask.io/" textDecoration="none" _hover={{ textDecoration: 'none' }}>
+                    <SlideFadeOnScroll>
+                      <Image mt={-10} borderRadius='full' src={theGraph} alt="metamask2" objectFit="contain" boxShadow='dark-lg'/>
+                    </SlideFadeOnScroll>
+                  </a>
+                </GridItem>
+                <GridItem colSpan={1} colStart={1} rowSpan={1} rowStart={3}  >
                   <a href="https://metamask.io/" textDecoration="none" _hover={{ textDecoration: 'none' }}>
                     <SlideFadeOnScroll>
                       <Image mt={isLessThan375 ? 5 : 10} borderRadius='full' src={metamask2} alt="metamask2" objectFit="contain" boxShadow='dark-lg'/>
                     </SlideFadeOnScroll>
                   </a>
                 </GridItem>
-                <GridItem colSpan={1} colStart={2} rowSpan={1} rowStart={4} >
+                <GridItem colSpan={1} colStart={2} rowSpan={1} rowStart={5} >
                   <a href="https://hardhat.org/" textDecoration="none" _hover={{ textDecoration: 'none' }}>
                     <SlideFadeOnScroll>
                       <Image mt={-10}  borderRadius='full' src={hardhat} alt="hardhat" objectFit="contain" boxShadow='dark-lg'/>
                     </SlideFadeOnScroll>
                   </a>
                 </GridItem>
-                <GridItem colSpan={1} colStart={4} rowSpan={1} rowStart={4} >
+                <GridItem colSpan={1} colStart={4} rowSpan={1} rowStart={5} >
                   <a href="https://getwaffle.io/" textDecoration="none" _hover={{ textDecoration: 'none' }}>
                     <SlideFadeOnScroll>
                       <Image mt={-10} bg='white' borderRadius='full' src={waffle} alt="waffle" objectFit="contain" boxShadow='dark-lg'/>
                     </SlideFadeOnScroll>
                   </a>
                 </GridItem>
-                <GridItem colSpan={1} colStart={5} rowSpan={1} rowStart={2} >
+                <GridItem colSpan={1} colStart={5} rowSpan={1} rowStart={3} >
                   <a href="https://docs.ethers.io/v5/" textDecoration="none" _hover={{ textDecoration: 'none' }}>
                     <SlideFadeOnScroll >
                       <Image  borderRadius='full' src={ethers} alt="ethers" objectFit="contain" boxShadow='dark-lg'/>
