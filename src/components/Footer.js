@@ -77,7 +77,7 @@ import {
                 </Box>
             </Box>       
         <Center>
-          <Text my="4" color={'white'}>Made with <FaHeart display={'inline'} color='red' /> by me 😎</Text>
+          <Text my="4" color={'white'}>Made with <Box display={'inline-block'} ><FaHeart color='red' /> </Box> by me 😎</Text>
         </Center>
         </Container>
     );
