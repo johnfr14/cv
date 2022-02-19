@@ -11,36 +11,31 @@ import {
   MenuItem,
   MenuDivider,
   useDisclosure,
-  useColorModeValue,
   Stack,
   Text,
+  Image,
+  Link,
 } from '@chakra-ui/react';
 import { useMediaQuery } from '@chakra-ui/react'
-import {Link} from 'react-scroll'
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 import { useWeb3React } from "@web3-react/core"
 import { injected } from "../components/wallet/Connectors"
 import john from '../img/moi.jpg'
+import github from '../img/github.png'
 
 const Links = ['About', 'Education', 'Skills', 'Projects', 'Contact'];
 
-const NavLink = ({ children }) => (
-  <Link
-    px={2}
-    py={1}
-    smooth={true}
-    rounded={'md'}
+const NavLink = ({ children }) => {
+  return <Link
     duration={1000}
-    offset={-70}
-    spy={true}
     _hover={{
       textDecoration: 'none',
-      bg: useColorModeValue('gray.200', 'gray.700'),
+      transition: 'width 0.5s, height 0.5s, transform 0.5s',
     }}
-    to={children}>
+    href={`#${children}`}>
     {children}
   </Link>
-);
+};
 
 const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -78,11 +73,16 @@ const Navbar = () => {
               as={'nav'}
               spacing={4}
               display={{ base: 'none', md: 'flex' }}>
-              {Links.map((link) => (
-                <NavLink key={link}>{link}</NavLink>
-              ))}
+              {Links.map((link) => {
+                  return <NavLink as={'a'} key={link}>{link}</NavLink>
+              })}
             </HStack>
+            <a href="https://github.com/johnfr14" target="_blank" rel="noreferrer">
+              <Image m={5} _hover={{boxSize: '100px', transition: 'width 0.5s, height 0.5s'}} border={'2px solid white'} boxSize='50px' align="center" borderRadius='full' src={github} alt="github"  boxShadow='dark-lg' />
+            </a>
           </HStack>
+
+
           <Flex alignItems={'center'}>
             { active ? <Text mx={4}>Connected with <b>{account.slice(0, 6) + '...' + account.slice(-4)}</b></Text> : ''}
             { active ? 
