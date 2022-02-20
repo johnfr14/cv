@@ -90,7 +90,7 @@ const Navbar = () => {
             :
             <Button onClick={connect} variant={'solid'} colorScheme={'teal'} size={'sm'} mr={4}> Connect wallet </Button> 
             }
-            <Menu>
+            <Menu >
               <MenuButton
                 as={Button}
                 rounded={'full'}
@@ -102,7 +102,11 @@ const Navbar = () => {
                   src={john}
                 />
               </MenuButton>
-              <MenuList>
+              <MenuList 
+              bgGradient='linear(to-r, teal.500, green.500)'
+              _hover={{
+              bgGradient: 'linear(to-r, green.500, teal.500)',
+            }}>
                 <MenuItem>In progress...</MenuItem>
                 <MenuItem>In progress...</MenuItem>
                 <MenuDivider />
@@ -114,7 +118,14 @@ const Navbar = () => {
 
         {isOpen ? (
           <Box pb={4} display={{ md: 'none' }}>
-            <Stack as={'nav'} spacing={4}>
+            <Stack 
+              as={'nav'} 
+              spacing={4}
+              duration={1000}
+              bgGradient='linear(to-r, teal.500, green.500)'
+              _hover={{
+              bgGradient: 'linear(to-r, red.500, yellow.500)',
+            }}>
               {Links.map((link) => (
                 <NavLink  style={{scrollBehavior: 'smooth'}} href={link} key={link}>{link}</NavLink>
               ))}

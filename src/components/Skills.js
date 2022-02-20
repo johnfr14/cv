@@ -53,13 +53,13 @@ const Skills = () => {
             <Grid templateColumns='repeat(5, 1fr)' templateRows={'repeat(6, 1fr)'} ml={[0, 50, 150, 400]} mr={50}>
 
                 <GridItem m={3} colSpan={3} colStart={2} rowSpan={2} rowStart={3} >
-                  <Popover placement='bottom' trigger="hover" closeDelay={500}>
+                  <Popover placement='bottom' trigger="hover" closeDelay={500} >
                     <PopoverTrigger>
                       <a href="https://docs.soliditylang.org/en/v0.8.11/#" textDecoration="none" _hover={{ textDecoration: 'none' }}>
                         <Image src={solidity} borderRadius='full' alt="solidity" objectFit="contain" />
                       </a>
                     </PopoverTrigger>
-                    <PopoverContent color={'white'} style={textPopover}>
+                    <PopoverContent color={'white'} style={textPopover} bgGradient='linear(to-r, blackAlpha.300, blackAlpha.400)'>
                       <PopoverArrow />
                       <PopoverCloseButton />
                       <PopoverHeader style={headerPopover}>Solidity</PopoverHeader>
@@ -77,7 +77,7 @@ const Skills = () => {
                         </SlideFadeOnScroll>
                       </a>
                     </PopoverTrigger>
-                    <PopoverContent color={'white'} style={textPopover}>
+                    <PopoverContent color={'white'} style={textPopover} bgGradient='linear(to-r, blackAlpha.300, blackAlpha.400)'>
                       <PopoverArrow />
                       <PopoverCloseButton />
                       <PopoverHeader style={headerPopover}>The Graph</PopoverHeader>
@@ -95,7 +95,7 @@ const Skills = () => {
                         </SlideFadeOnScroll>
                       </a>
                     </PopoverTrigger>
-                    <PopoverContent color={'white'} style={textPopover}>
+                    <PopoverContent color={'white'} style={textPopover} bgGradient='linear(to-r, blackAlpha.300, blackAlpha.400)'>
                       <PopoverArrow />
                       <PopoverCloseButton />
                       <PopoverHeader style={headerPopover}>Metamask</PopoverHeader>
@@ -113,7 +113,7 @@ const Skills = () => {
                         </SlideFadeOnScroll>
                     </a>
                     </PopoverTrigger>
-                    <PopoverContent color={'white'} style={textPopover}>
+                    <PopoverContent color={'white'} style={textPopover} bgGradient='linear(to-r, blackAlpha.300, blackAlpha.400)'>
                       <PopoverArrow />
                       <PopoverCloseButton />
                       <PopoverHeader style={headerPopover}>Harhat</PopoverHeader>
@@ -131,7 +131,7 @@ const Skills = () => {
                         </SlideFadeOnScroll>
                       </a>
                     </PopoverTrigger>
-                    <PopoverContent color={'white'} style={textPopover}>
+                    <PopoverContent color={'white'} style={textPopover} bgGradient='linear(to-r, blackAlpha.300, blackAlpha.400)'>
                       <PopoverArrow />
                       <PopoverCloseButton />
                       <PopoverHeader style={headerPopover}>Waffle</PopoverHeader>
@@ -149,7 +149,7 @@ const Skills = () => {
                         </SlideFadeOnScroll>
                       </a>
                     </PopoverTrigger>
-                    <PopoverContent color={'white'} style={textPopover}>
+                    <PopoverContent color={'white'} style={textPopover} bgGradient='linear(to-r, blackAlpha.300, blackAlpha.400)'>
                       <PopoverArrow />
                       <PopoverCloseButton />
                       <PopoverHeader style={headerPopover}>Ether.js</PopoverHeader>
@@ -169,7 +169,7 @@ const Skills = () => {
                       <Image mt={isLessThan375 ? '' :-10} src={javascript} alt="javascript" objectFit="contain" />
                     </a>
                   </PopoverTrigger>
-                  <PopoverContent color={'white'} style={textPopover}>
+                  <PopoverContent color={'white'} style={textPopover} bgGradient='linear(to-r, blackAlpha.300, blackAlpha.400)'>
                     <PopoverArrow />
                     <PopoverCloseButton />
                     <PopoverHeader style={headerPopover}>Javascript</PopoverHeader>
@@ -188,7 +188,7 @@ const Skills = () => {
                       </SlideFadeOnScroll>
                     </a>
                   </PopoverTrigger>
-                  <PopoverContent color={'white'} style={textPopover}>
+                  <PopoverContent color={'white'} style={textPopover} bgGradient='linear(to-r, blackAlpha.300, blackAlpha.400)'>
                     <PopoverArrow />
                     <PopoverCloseButton />
                     <PopoverHeader style={headerPopover}>Chakra</PopoverHeader>
@@ -206,7 +206,7 @@ const Skills = () => {
                       </SlideFadeOnScroll>
                     </a>
                   </PopoverTrigger>
-                  <PopoverContent color={'white'} style={textPopover}>
+                  <PopoverContent color={'white'} style={textPopover} bgGradient='linear(to-r, blackAlpha.300, blackAlpha.400)'>
                     <PopoverArrow />
                     <PopoverCloseButton />
                     <PopoverHeader style={headerPopover}>prisma</PopoverHeader>
@@ -224,7 +224,7 @@ const Skills = () => {
                       </SlideFadeOnScroll>
                     </a>
                   </PopoverTrigger>
-                  <PopoverContent color={'white'} style={textPopover}>
+                  <PopoverContent color={'white'} style={textPopover} bgGradient='linear(to-r, blackAlpha.300, blackAlpha.400)'>
                     <PopoverArrow />
                     <PopoverCloseButton />
                     <PopoverHeader style={headerPopover}>React</PopoverHeader>
@@ -242,7 +242,7 @@ const Skills = () => {
                       </SlideFadeOnScroll>
                     </a>
                   </PopoverTrigger>
-                  <PopoverContent color={'white'} style={textPopover}>
+                  <PopoverContent color={'white'} style={textPopover} bgGradient='linear(to-r, blackAlpha.300, blackAlpha.400)'>
                     <PopoverArrow />
                     <PopoverCloseButton />
                     <PopoverHeader style={headerPopover}>Nodejs</PopoverHeader>
